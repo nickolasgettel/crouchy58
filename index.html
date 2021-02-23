@@ -24,23 +24,40 @@
             </nav>
             
             <main class="media">
-                <div id="stream">TWITCH STATUS: LIVE</div>
+                <div id="stream">TWITCH STATUS: LIVE
+                    <div id="twitch-embed"></div>
+                    
+                    
+                </div>
                 <div id="recent">RECENT VIDEOS</div>
             </main>
             <footer>
                 
                 <ul class="social">
-                    <li><i class="fab fa-tiktok"></i><p class="social-text">TikTok</p></li>
-                    <li><i class="fab fa-twitch"></i><p class="social-text">Twitch</p></li>
-                    <li><i class="fab fa-instagram"></i><p class="social-text">Instagram</p></li>
-                    <li><i class="fab fa-youtube"></i><p class="social-text">YouTube</p></li>
+                    <li><a href="https://www.tiktok.com/@crouchy58?lang=en"><i class="fab fa-tiktok"></i><p class="social-text">TikTok</p></a></li>
+                    <li><a href="https://www.twitch.tv/crouchy58"><i class="fab fa-twitch"></i><p class="social-text">Twitch</p></a></li>
+                    <li><a href="https://www.instagram.com/crouchy58clips/"><i class="fab fa-instagram"></i><p class="social-text">Instagram</p></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCPA_O7MXGOVf6euKFqNbgDQ"><i class="fab fa-youtube"></i><p class="social-text">YouTube</p></a></li>
+
                 </ul>
                    
               
             </footer>
         </div>
     </div>
+    <script src="https://embed.twitch.tv/embed/v1.js"></script>
 
+    <script type="text/javascript">
+      new Twitch.Embed("twitch-embed", {
+        // layout: video,
+        channel: "blisskreation",
+        autoplay: true,
+        allowfullscreen: true,
+        width: '100%',
+        layout: "video",
+        parent: ["embed.example.com", "othersite.example.com"]
+      });
+    </script>
     <script src="public/js/main.js"></script>
 </body>
 </html>
