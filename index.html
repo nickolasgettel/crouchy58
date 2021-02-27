@@ -8,56 +8,64 @@
     <title>Crouchy58</title>
 </head>
 <body>
-    <div id="graident-cover">
-        <div class="container">
-            <nav>
-                <div class="brand">
-                    <h1>CROUCHY<span>58</span></h1>
-                    <ul>
+    <div class="graident-blur">
+        <div class="main-grid">
+            <header class="header-grid">
+                <p>Crouchy<span class="active">58</span></p>
+                <nav>
+                    <ul class="nav-links">
                         <li class="active">MEDIA</li>
-                        <li>ABOUT</li>
-                        <li>GAMES</li>
+                        <li>SETTINGS</li>
+                        <li>LOADOUTS</li>
                         <li>DONATE</li>
                     </ul>
+                </nav>
+                <div class="avatar">
+                    <img src="public/images/mike1.jpg" alt="Crouchy58">
                 </div>
-                <img class="avatar" src="/public/images/mike1.jpg" alt="crouchy58">
-            </nav>
-            
-            <main class="media">
-                <div id="stream">TWITCH STATUS: LIVE
-                    <div id="twitch-embed"></div>
-                    
-                    
-                </div>
-                <div id="recent">RECENT VIDEOS</div>
+            </header>   
+            <main class="content-grid">
+                <p class="status">Twitch Stream Status: <span>LIVE</span></p>
+                <p clas="recent">Recent Streams</p>
+                
+                    <div  class="twitch">
+                        <div class="twitch-video" id="twitch-embed"></div>
+                    </div>  
+                <section>RECENT VIDEOS</section>
             </main>
             <footer>
-                
-                <ul class="social">
-                    <li><a href="https://www.tiktok.com/@crouchy58?lang=en"><i class="fab fa-tiktok"></i><p class="social-text">TikTok</p></a></li>
-                    <li><a href="https://www.twitch.tv/crouchy58"><i class="fab fa-twitch"></i><p class="social-text">Twitch</p></a></li>
-                    <li><a href="https://www.instagram.com/crouchy58clips/"><i class="fab fa-instagram"></i><p class="social-text">Instagram</p></a></li>
-                    <li><a href="https://www.youtube.com/channel/UCPA_O7MXGOVf6euKFqNbgDQ"><i class="fab fa-youtube"></i><p class="social-text">YouTube</p></a></li>
-
-                </ul>
-                   
-              
+                <div class="social-media">
+                    <i class="fab fa-tiktok"></i>
+                    <p>TikTok</p>
+                </div>
+                <div class="social-media">
+                    <i class="fab fa-twitch"></i>
+                    <p>Twitch</p>
+                </div>
+                <div class="social-media">
+                    <i class="fab fa-instagram"></i>
+                    <p>Instagram</p>
+                </div>
+                <div class="social-media">
+                    <i class="fab fa-youtube"></i>
+                    <p>YouTube</p>
+                </div>
             </footer>
+
         </div>
     </div>
-    <script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+    <script src= "https://player.twitch.tv/js/embed/v1.js"></script>
 
     <script type="text/javascript">
-      new Twitch.Embed("twitch-embed", {
-        // layout: video,
-        channel: "blisskreation",
-        autoplay: true,
-        allowfullscreen: true,
-        width: '100%',
-        layout: "video",
-        parent: ["embed.example.com", "othersite.example.com"]
-      });
-    </script>
-    <script src="public/js/main.js"></script>
+        new Twitch.Embed("twitch-embed", {
+          channel: "shroud",
+          autoplay: true,
+          allowfullscreen: true,
+          width: '100%',
+          layout: "video",
+          parent: ["localhost"]
+        });
+      </script>
 </body>
 </html>
